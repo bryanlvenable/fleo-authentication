@@ -5,7 +5,7 @@ var express     = require('express'),
     morgan      = require('morgan'),
     mongoose    = require('mongoose'),
     jwt         = require('jsonwebtoken')
-    config      = require('./config'),
+    config      = require('config/config'),
     User        = require('./app/models/user');
 
 // Configuration
