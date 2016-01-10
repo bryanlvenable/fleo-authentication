@@ -16,8 +16,10 @@ mongoose.connect(config.mongo.uri);
 app.set('superSecret', config.secret);
 
 // body-parser allows us to get ifo from POST and/or URL parameters
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// In development config, use morgan to log requests to the console
 if (config.environment === 'development') {
-    app.use(bodyParser.urlencoded({ extended: false }));
     app.use(morgan('dev'));
 }
 
