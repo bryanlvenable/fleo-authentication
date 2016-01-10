@@ -9,6 +9,6 @@ var express     = require('express'),
     User        = require('./app/models/user');
 
 // Configuration
-var port = process.env.PORT || 9000;
-mongoose.connect(config.database);
-app.set('secret, config.secret');
+var port = config.port;
+mongoose.connect(config.mongo.uri);
+app.set('secret', config.secret);
