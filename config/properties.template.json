@@ -6,7 +6,7 @@
         "host": "http://localhost",
         "port": "9010",
         "mongo": {
-            "uri": "mongodb://localhost/DATABASE-NAME-HERE"
+            "uri": "mongodb://localhost/fleo-authentication"
         }
     }
 }
